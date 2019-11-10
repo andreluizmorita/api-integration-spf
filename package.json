@@ -1,0 +1,105 @@
+{
+  "name": "webpack-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "history": "^4.10.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^16.11.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-sound": "^1.2.0",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.1.1",
+    "styled-components": "^4.4.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config=config/webpack.dev.js --hot",
+    "start:reload": "webpack-dev-server --config=config/webpack.dev.js",
+    "start:style": "cross-env MAP_STYLE=true webpack-dev-server --config=config/webpack.dev.js --hot",
+    "build": "webpack --config=config/webpack.prod.js",
+    "build:hml": "webpack --config=config/webpack.prod.js",
+    "analyze": "cross-env ENABLE_ANALYZER=true yarn build",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@babel/preset-stage-0": "^7.0.0",
+    "@babel/runtime": "^7.7.2",
+    "@testing-library/react": "^9.3.2",
+    "@types/jest": "^24.0.22",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "jest-styled-components": "^6.3.3",
+    "mini-css-extract-plugin": "^0.8.0",
+    "mocker-api": "^1.9.0",
+    "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "pretty-quick": "^2.0.1",
+    "react-test-renderer": "^16.11.0",
+    "redux-mock-store": "^1.5.3",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-manifest-plugin": "^2.2.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/config/setupTests.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/__mocks__/fileMock.js",
+      "\\.(css|less|scss|sass)$": "<rootDir>/config/__mocks__/styleMock.js"
+    }
+  },
+  "prettier": {
+    "printWidth": 90,
+    "bracketSpacing": false,
+    "trailingComma": "es5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.+(json|css|md)": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

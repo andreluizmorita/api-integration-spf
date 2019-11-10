@@ -1,0 +1,545 @@
+{
+  "albums" : {
+    "href" : "https://api.spotify.com/v1/search?query=Metallica&type=album&offset=0&limit=5",
+    "items" : [ {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+        "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+        "name" : "Metallica",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2Kh43m04B1UkVcpcRa1Zug"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2Kh43m04B1UkVcpcRa1Zug",
+      "id" : "2Kh43m04B1UkVcpcRa1Zug",
+      "images" : [ {
+        "height" : 635,
+        "url" : "https://i.scdn.co/image/58a14f1de9f5e980e642357729602945b9388858",
+        "width" : 640
+      }, {
+        "height" : 297,
+        "url" : "https://i.scdn.co/image/ba8d9aa4ec426efda23f53a50875953b9255d573",
+        "width" : 300
+      }, {
+        "height" : 63,
+        "url" : "https://i.scdn.co/image/08de8ef442ead93a54ce23bc3a717edfbb3a6fd8",
+        "width" : 64
+      } ],
+      "name" : "Metallica",
+      "release_date" : "1991-01-01",
+      "release_date_precision" : "day",
+      "total_tracks" : 12,
+      "type" : "album",
+      "uri" : "spotify:album:2Kh43m04B1UkVcpcRa1Zug"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+        "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+        "name" : "Metallica",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2Lq2qX3hYhiuPckC8Flj21"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2Lq2qX3hYhiuPckC8Flj21",
+      "id" : "2Lq2qX3hYhiuPckC8Flj21",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/3b6db779aa5739127acdf4eac9a7e553af647901",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/b76cd3202f3e601a313b7fa3159ed8c2492d0064",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/c1e6f8f6c02db088661f585c3cb67cddfb511c88",
+        "width" : 64
+      } ],
+      "name" : "Master Of Puppets (Remastered)",
+      "release_date" : "1986-03-03",
+      "release_date_precision" : "day",
+      "total_tracks" : 8,
+      "type" : "album",
+      "uri" : "spotify:album:2Lq2qX3hYhiuPckC8Flj21"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+        "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+        "name" : "Metallica",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/0vshXZYhBkbIoqxyC2fXcF"
+      },
+      "href" : "https://api.spotify.com/v1/albums/0vshXZYhBkbIoqxyC2fXcF",
+      "id" : "0vshXZYhBkbIoqxyC2fXcF",
+      "images" : [ {
+        "height" : 635,
+        "url" : "https://i.scdn.co/image/39b3632645249f6a37e3cdefbc17a9278f7b134b",
+        "width" : 640
+      }, {
+        "height" : 297,
+        "url" : "https://i.scdn.co/image/32647b9f33ba0b44b3896472cce244e4fb25353e",
+        "width" : 300
+      }, {
+        "height" : 63,
+        "url" : "https://i.scdn.co/image/38e415caf981519ece3d4d7b3410714d91aa5c2e",
+        "width" : 64
+      } ],
+      "name" : "Garage Inc.",
+      "release_date" : "1998-01-01",
+      "release_date_precision" : "day",
+      "total_tracks" : 27,
+      "type" : "album",
+      "uri" : "spotify:album:0vshXZYhBkbIoqxyC2fXcF"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+        "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+        "name" : "Metallica",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/6Eycw3dwcDMEFSqkUvLQ7g"
+      },
+      "href" : "https://api.spotify.com/v1/albums/6Eycw3dwcDMEFSqkUvLQ7g",
+      "id" : "6Eycw3dwcDMEFSqkUvLQ7g",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/a872c22ff7b315d786abfb71a56f7f9f81470a5b",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/a61dbffb9d3fbf430f1ce2dcc3cd64679ac19990",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/69b5b8dcb648dc590e4fd21b7e6ef402ebb730e5",
+        "width" : 64
+      } ],
+      "name" : "...And Justice For All",
+      "release_date" : "1988-08-25",
+      "release_date_precision" : "day",
+      "total_tracks" : 9,
+      "type" : "album",
+      "uri" : "spotify:album:6Eycw3dwcDMEFSqkUvLQ7g"
+    }, {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+        "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+        "name" : "Metallica",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/4bcUiX49wpmDRhrC8TvDWV"
+      },
+      "href" : "https://api.spotify.com/v1/albums/4bcUiX49wpmDRhrC8TvDWV",
+      "id" : "4bcUiX49wpmDRhrC8TvDWV",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/38aae3e851571d7a8a1b4c610b7523ae8c104b7b",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/1f63bbd851f87b051cabd3b189ae3c7a9e696b29",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/e7ec33278713b6ebd8a3aaebda8e2d192619b8c6",
+        "width" : 64
+      } ],
+      "name" : "Hardwired…To Self-Destruct (Deluxe)",
+      "release_date" : "2016-11-18",
+      "release_date_precision" : "day",
+      "total_tracks" : 26,
+      "type" : "album",
+      "uri" : "spotify:album:4bcUiX49wpmDRhrC8TvDWV"
+    } ],
+    "limit" : 5,
+    "next" : "https://api.spotify.com/v1/search?query=Metallica&type=album&offset=5&limit=5",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 235
+  },
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/search?query=Metallica&type=track&offset=0&limit=5",
+    "items" : [ {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+          "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+          "name" : "Metallica",
+          "type" : "artist",
+          "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+        } ],
+        "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2Kh43m04B1UkVcpcRa1Zug"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2Kh43m04B1UkVcpcRa1Zug",
+        "id" : "2Kh43m04B1UkVcpcRa1Zug",
+        "images" : [ {
+          "height" : 635,
+          "url" : "https://i.scdn.co/image/58a14f1de9f5e980e642357729602945b9388858",
+          "width" : 640
+        }, {
+          "height" : 297,
+          "url" : "https://i.scdn.co/image/ba8d9aa4ec426efda23f53a50875953b9255d573",
+          "width" : 300
+        }, {
+          "height" : 63,
+          "url" : "https://i.scdn.co/image/08de8ef442ead93a54ce23bc3a717edfbb3a6fd8",
+          "width" : 64
+        } ],
+        "name" : "Metallica",
+        "release_date" : "1991-01-01",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:2Kh43m04B1UkVcpcRa1Zug"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+        "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+        "name" : "Metallica",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+      "disc_number" : 1,
+      "duration_ms" : 388266,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBF089190020"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/0nLiqZ6A27jJri2VCalIUs"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/0nLiqZ6A27jJri2VCalIUs",
+      "id" : "0nLiqZ6A27jJri2VCalIUs",
+      "is_local" : false,
+      "name" : "Nothing Else Matters",
+      "popularity" : 81,
+      "preview_url" : null,
+      "track_number" : 8,
+      "type" : "track",
+      "uri" : "spotify:track:0nLiqZ6A27jJri2VCalIUs"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+          "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+          "name" : "Metallica",
+          "type" : "artist",
+          "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+        } ],
+        "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2Kh43m04B1UkVcpcRa1Zug"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2Kh43m04B1UkVcpcRa1Zug",
+        "id" : "2Kh43m04B1UkVcpcRa1Zug",
+        "images" : [ {
+          "height" : 635,
+          "url" : "https://i.scdn.co/image/58a14f1de9f5e980e642357729602945b9388858",
+          "width" : 640
+        }, {
+          "height" : 297,
+          "url" : "https://i.scdn.co/image/ba8d9aa4ec426efda23f53a50875953b9255d573",
+          "width" : 300
+        }, {
+          "height" : 63,
+          "url" : "https://i.scdn.co/image/08de8ef442ead93a54ce23bc3a717edfbb3a6fd8",
+          "width" : 64
+        } ],
+        "name" : "Metallica",
+        "release_date" : "1991-01-01",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:2Kh43m04B1UkVcpcRa1Zug"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+        "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+        "name" : "Metallica",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+      "disc_number" : 1,
+      "duration_ms" : 331266,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBF089190013"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5sICkBXVmaCQk5aISGR3x1"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5sICkBXVmaCQk5aISGR3x1",
+      "id" : "5sICkBXVmaCQk5aISGR3x1",
+      "is_local" : false,
+      "name" : "Enter Sandman",
+      "popularity" : 80,
+      "preview_url" : null,
+      "track_number" : 1,
+      "type" : "track",
+      "uri" : "spotify:track:5sICkBXVmaCQk5aISGR3x1"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+          "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+          "name" : "Metallica",
+          "type" : "artist",
+          "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+        } ],
+        "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2Kh43m04B1UkVcpcRa1Zug"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2Kh43m04B1UkVcpcRa1Zug",
+        "id" : "2Kh43m04B1UkVcpcRa1Zug",
+        "images" : [ {
+          "height" : 635,
+          "url" : "https://i.scdn.co/image/58a14f1de9f5e980e642357729602945b9388858",
+          "width" : 640
+        }, {
+          "height" : 297,
+          "url" : "https://i.scdn.co/image/ba8d9aa4ec426efda23f53a50875953b9255d573",
+          "width" : 300
+        }, {
+          "height" : 63,
+          "url" : "https://i.scdn.co/image/08de8ef442ead93a54ce23bc3a717edfbb3a6fd8",
+          "width" : 64
+        } ],
+        "name" : "Metallica",
+        "release_date" : "1991-01-01",
+        "release_date_precision" : "day",
+        "total_tracks" : 12,
+        "type" : "album",
+        "uri" : "spotify:album:2Kh43m04B1UkVcpcRa1Zug"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+        "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+        "name" : "Metallica",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+      "disc_number" : 1,
+      "duration_ms" : 386493,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBF089190016"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/4aYLAF6ckQ5ooGGGM7sWAa"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/4aYLAF6ckQ5ooGGGM7sWAa",
+      "id" : "4aYLAF6ckQ5ooGGGM7sWAa",
+      "is_local" : false,
+      "name" : "The Unforgiven",
+      "popularity" : 74,
+      "preview_url" : null,
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:4aYLAF6ckQ5ooGGGM7sWAa"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+          "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+          "name" : "Metallica",
+          "type" : "artist",
+          "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+        } ],
+        "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/2Lq2qX3hYhiuPckC8Flj21"
+        },
+        "href" : "https://api.spotify.com/v1/albums/2Lq2qX3hYhiuPckC8Flj21",
+        "id" : "2Lq2qX3hYhiuPckC8Flj21",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/3b6db779aa5739127acdf4eac9a7e553af647901",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/b76cd3202f3e601a313b7fa3159ed8c2492d0064",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/c1e6f8f6c02db088661f585c3cb67cddfb511c88",
+          "width" : 64
+        } ],
+        "name" : "Master Of Puppets (Remastered)",
+        "release_date" : "1986-03-03",
+        "release_date_precision" : "day",
+        "total_tracks" : 8,
+        "type" : "album",
+        "uri" : "spotify:album:2Lq2qX3hYhiuPckC8Flj21"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+        "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+        "name" : "Metallica",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+      "disc_number" : 1,
+      "duration_ms" : 515386,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "QMKHM1600219"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/2MuWTIM3b0YEAskbeeFE1i"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/2MuWTIM3b0YEAskbeeFE1i",
+      "id" : "2MuWTIM3b0YEAskbeeFE1i",
+      "is_local" : false,
+      "name" : "Master Of Puppets",
+      "popularity" : 75,
+      "preview_url" : null,
+      "track_number" : 2,
+      "type" : "track",
+      "uri" : "spotify:track:2MuWTIM3b0YEAskbeeFE1i"
+    }, {
+      "album" : {
+        "album_type" : "album",
+        "artists" : [ {
+          "external_urls" : {
+            "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+          },
+          "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+          "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+          "name" : "Metallica",
+          "type" : "artist",
+          "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+        } ],
+        "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/album/6Eycw3dwcDMEFSqkUvLQ7g"
+        },
+        "href" : "https://api.spotify.com/v1/albums/6Eycw3dwcDMEFSqkUvLQ7g",
+        "id" : "6Eycw3dwcDMEFSqkUvLQ7g",
+        "images" : [ {
+          "height" : 640,
+          "url" : "https://i.scdn.co/image/a872c22ff7b315d786abfb71a56f7f9f81470a5b",
+          "width" : 640
+        }, {
+          "height" : 300,
+          "url" : "https://i.scdn.co/image/a61dbffb9d3fbf430f1ce2dcc3cd64679ac19990",
+          "width" : 300
+        }, {
+          "height" : 64,
+          "url" : "https://i.scdn.co/image/69b5b8dcb648dc590e4fd21b7e6ef402ebb730e5",
+          "width" : 64
+        } ],
+        "name" : "...And Justice For All",
+        "release_date" : "1988-08-25",
+        "release_date_precision" : "day",
+        "total_tracks" : 9,
+        "type" : "album",
+        "uri" : "spotify:album:6Eycw3dwcDMEFSqkUvLQ7g"
+      },
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2ye2Wgw4gimLv2eAKyk1NB"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2ye2Wgw4gimLv2eAKyk1NB",
+        "id" : "2ye2Wgw4gimLv2eAKyk1NB",
+        "name" : "Metallica",
+        "type" : "artist",
+        "uri" : "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+      } ],
+      "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "UY", "VN", "ZA" ],
+      "disc_number" : 1,
+      "duration_ms" : 447440,
+      "explicit" : false,
+      "external_ids" : {
+        "isrc" : "GBAMC9400003"
+      },
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/track/5IX4TbIR5mMHGE4wiWwKW0"
+      },
+      "href" : "https://api.spotify.com/v1/tracks/5IX4TbIR5mMHGE4wiWwKW0",
+      "id" : "5IX4TbIR5mMHGE4wiWwKW0",
+      "is_local" : false,
+      "name" : "One",
+      "popularity" : 73,
+      "preview_url" : null,
+      "track_number" : 4,
+      "type" : "track",
+      "uri" : "spotify:track:5IX4TbIR5mMHGE4wiWwKW0"
+    } ],
+    "limit" : 5,
+    "next" : "https://api.spotify.com/v1/search?query=Metallica&type=track&offset=5&limit=5",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 2611
+  }
+}

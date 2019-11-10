@@ -1,0 +1,27 @@
+{
+  "extends": ["prettier", "prettier/react", "airbnb"],
+  "plugins": ["jest", "prettier", "import"],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "rules": {
+    "no-debugger": 1,
+    "no-shadow": 0,
+    "linebreak-style": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.test.jsx",
+          "**/test-utils.jsx",
+          "./rollup.config.js"
+        ]
+      }
+    ]
+  }
+}
