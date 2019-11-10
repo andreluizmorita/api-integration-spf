@@ -14,6 +14,7 @@ export const INITIAL_STATE = {
     },
   },
   busca: "",
+  cache: [],
   loading: false,
 };
 
@@ -22,6 +23,15 @@ export default function buscar(state = INITIAL_STATE, action) {
     case Types.GET_REQUEST:
       return {...INITIAL_STATE, loading: true};
     case Types.GET_SUCCESS:
+      if (state.cache.length > 10) {
+        state.cache.shift();
+      }
+      const addCache = {
+        data: {...action.payload.data},
+        buscar: action.payload.busca,
+      };
+      //state.cache.push(addCache);
+
       return {
         ...state,
         loading: false,
@@ -41,7 +51,7 @@ export const Creators = {
     payload: {buscar},
   }),
 
-  getBuscarSuccess: ({data, busca}) => ({
+  getBuscarSuccess: (data, busca) => ({
     type: Types.GET_SUCCESS,
     payload: {data, busca},
   }),

@@ -13,25 +13,33 @@ import {Creators as BuscarActions} from "../../store/ducks/buscar";
 
 import {Form, Content} from "./styles";
 
-function Buscar({getBuscarRequest, buscar}) {
+function Buscar({getBuscarRequest, getBuscarSuccess, buscar}) {
   const {buscarTexto} = useParams();
   const [busca, setBusca] = useState("");
   const delayBusca = useDebounce(busca, 1500);
 
-  const getBuscar = useCallback(() => {
-    if (busca.length > 0) {
+  const buscarApi = useCallback(() => {
+    const cache = buscar.cache.filter(
+      cache => cache.buscar.toUpperCase() === busca.toUpperCase(),
+      busca
+    );
+
+    if (busca.length > 0 && cache.length == 0) {
       getBuscarRequest(busca);
+    } else if (cache.length > 0 && busca.length > 0) {
+      const resultCache = cache[Object.keys(cache)[0]];
+      getBuscarSuccess(resultCache.data, resultCache.buscar);
     }
   }, [busca]);
 
   function handleSubmit(e) {
     e.preventDefault();
-    getBuscar();
+    buscarApi();
   }
 
   useEffect(() => {
     if (delayBusca) {
-      getBuscar();
+      buscarApi();
     }
   }, [delayBusca]);
 
@@ -63,6 +71,7 @@ function Buscar({getBuscarRequest, buscar}) {
 
 Buscar.propTypes = {
   getBuscarRequest: PropTypes.func.isRequired,
+  getBuscarSuccess: PropTypes.func.isRequired,
   buscar: PropTypes.shape({
     busca: PropTypes.string.isRequired,
     data: PropTypes.shape({

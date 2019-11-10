@@ -9,16 +9,13 @@ export default function* getBuscar({payload}) {
     ErroActions.hideErro();
     api.defaults.headers["Authorization"] = `Bearer ${localStorage.getItem("token") ||
       "request-token"}`;
+
     const response = yield call(
       api.get,
       `/search?query=${payload.buscar}&offset=0&limit=10&type=album,track`
     );
-    yield put(
-      BuscarActions.getBuscarSuccess({
-        data: response.data,
-        busca: payload.buscar,
-      })
-    );
+
+    yield put(BuscarActions.getBuscarSuccess(response.data, payload.buscar));
   } catch (err) {
     yield put(BuscarActions.getBuscarError());
 

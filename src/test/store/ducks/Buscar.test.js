@@ -25,14 +25,12 @@ describe("Testing store buscar duck", () => {
 
     const stateSuccess = reducer(
       INITIAL_STATE,
-      BuscarActions.getBuscarSuccess({
-        data: MockBuscar,
-        busca: buscar,
-      })
+      BuscarActions.getBuscarSuccess(MockBuscar, buscar)
     );
 
     compare = {
       data: MockBuscar,
+      cache: [],
       busca: buscar,
       loading: false,
     };
