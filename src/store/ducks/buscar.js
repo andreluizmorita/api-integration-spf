@@ -1,5 +1,6 @@
 export const Types = {
   GET_REQUEST: "buscar/GET_REQUEST",
+  GET_CACHE: "buscar/GET_CACHE",
   GET_SUCCESS: "buscar/GET_SUCCESS",
   GET_ERROR: "buscar/GET_ERROR",
 };
@@ -20,8 +21,22 @@ export const INITIAL_STATE = {
 
 export default function buscar(state = INITIAL_STATE, action) {
   switch (action.type) {
+    // TODO (André Morita) migrate cache component to redux
+    case Types.GET_CACHE:
+      const busca = action.payload.buscar;
+      const cache = state.cache.filter(
+        cache => cache.buscar.toUpperCase() === busca.toUpperCase(),
+        busca
+      );
+
+      const data = {
+        data: cache[Object.keys(cache)[0]].data,
+        buscar: cache[Object.keys(cache)[0]].buscar,
+      };
+
+      return {...INITIAL_STATE, ...data, loading: false};
     case Types.GET_REQUEST:
-      return {...INITIAL_STATE, loading: true};
+      return {...INITIAL_STATE, loading: false};
     case Types.GET_SUCCESS:
       if (state.cache.length > 10) {
         state.cache.shift();
@@ -30,7 +45,7 @@ export default function buscar(state = INITIAL_STATE, action) {
         data: {...action.payload.data},
         buscar: action.payload.busca,
       };
-      //state.cache.push(addCache);
+      state.cache.push(addCache);
 
       return {
         ...state,
@@ -46,6 +61,11 @@ export default function buscar(state = INITIAL_STATE, action) {
 }
 
 export const Creators = {
+  getCache: buscar => ({
+    type: Types.GET_CACHE,
+    payload: {buscar},
+  }),
+
   getBuscarRequest: buscar => ({
     type: Types.GET_REQUEST,
     payload: {buscar},
