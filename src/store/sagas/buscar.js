@@ -12,7 +12,7 @@ export default function* getBuscar({payload}) {
 
     const response = yield call(
       api.get,
-      `/search?query=${payload.buscar}&offset=0&limit=10&type=album,track`
+      `/search?query=${payload.buscar}&offset=0&limit=10&type=album,track&market=BR`
     );
 
     yield put(BuscarActions.getBuscarSuccess(response.data, payload.buscar));

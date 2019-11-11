@@ -6,35 +6,33 @@ import {useParams} from "react-router-dom";
 
 import {Creators as AlbumActions} from "../../store/ducks/album";
 import {Creators as ErroActions} from "../../store/ducks/erro";
+import {Creators as PlayerActions} from "../../store/ducks/player";
 
 import Container from "../../components/Container";
 import AlbumComponent from "../../components/Album";
-import Song from "../../components/Song";
 
-import {AlbumContent, Playlist, Voltar} from "./styles";
+import Player from "../../components/Player";
 
-function Album({history, getAlbumRequest, setErro, album}) {
+import {msToTime} from "../../utils/ms-time-convert";
+
+import {AlbumContent, Playlist, Voltar, SongItem} from "./styles";
+
+function Album({
+  history,
+  getAlbumRequest,
+  setErro,
+  album,
+  playSong,
+  selectSong,
+  currentSong,
+}) {
   const {albumId, trackId} = useParams();
-  const [song, setSong] = useState({
+  const [selectedSong, setSelectedSong] = useState({
     id: null,
-    url: null,
   });
 
   function getAlbum() {
     getAlbumRequest(albumId);
-  }
-
-  function handleClickPreview(track) {
-    if (track === null) {
-      setErro("O Spotify não disponibiliza preview dessa música");
-    } else if (track.preview_url !== null) {
-      setSong({
-        id: track.id,
-        url: track.preview_url,
-      });
-    } else {
-      setErro("O Spotify não disponibiliza preview dessa música");
-    }
   }
 
   useEffect(() => {
@@ -44,32 +42,39 @@ function Album({history, getAlbumRequest, setErro, album}) {
   }, [albumId]);
 
   useEffect(() => {
-    if (typeof trackId !== "undefined") {
-      handleClickPreview(trackId);
-    }
-  }, [trackId]);
-
-  useEffect(() => {
     if (!album.loading && typeof trackId !== "undefined") {
-      const objectTrack = album.data.tracks.items.filter(
+      const objectTrack = album.data.songs.filter(
         track => track.id === trackId && track.preview_url !== null,
         trackId
       );
       const track = objectTrack[Object.keys(objectTrack)[0]];
 
       if (typeof track === "object") {
-        handleClickPreview(track);
+        setSelectedSong({
+          id: track.id,
+          url: track.preview_url,
+        });
+        playSong(track, album.data.songs);
       } else {
         setErro("O Spotify não disponibiliza preview dessa música");
       }
     }
   }, [album, trackId]);
 
+  function handleSong(song, items, type) {
+    if (song.preview_url === null) {
+      setErro("O Spotify não disponibiliza preview dessa música");
+    } else if (type === "select") {
+      selectSong(song, items);
+    } else if (type === "play") {
+      playSong(song, items);
+    }
+  }
+
   return (
     <>
       {!album.loading && (
         <Container>
-          {!!song.url && <Song song={song} />}
           <div className="content-page">
             <div>
               <Voltar type="button" className="voltar" onClick={() => history.push("/")}>
@@ -78,28 +83,27 @@ function Album({history, getAlbumRequest, setErro, album}) {
             </div>
             <AlbumContent className="flex-row">
               <div className="album">
-                {album.data.images.length > 0 && <AlbumComponent album={album.data} />}
+                <AlbumComponent album={album.data} />
               </div>
               <Playlist>
                 <ol role="menu">
-                  {album.data.tracks.items.map(track => (
-                    <li
-                      className={
-                        (song.id === track.id ? "active" : "") +
-                        (track.preview_url == null ? " disabled" : "")
-                      }
-                      key={track.id}
-                      onClick={() =>
-                        handleClickPreview(track.preview_url == null ? null : track)
-                      }
+                  {album.data.songs.map(song => (
+                    <SongItem
+                      key={song.id}
+                      onClick={() => handleSong(song, album.data.songs, "select")}
+                      onDoubleClick={() => handleSong(song, album.data.songs, "play")}
+                      selected={selectedSong.id === song.id}
+                      playing={currentSong && currentSong.id === song.id}
+                      disabled={song.preview_url === null}
                     >
-                      {track.name}
-                    </li>
+                      {song.title} <span>{msToTime(song.duration)}</span>
+                    </SongItem>
                   ))}
                 </ol>
               </Playlist>
             </AlbumContent>
           </div>
+          <Player />
         </Container>
       )}
     </>
@@ -111,29 +115,17 @@ Album.propTypes = {
   getAlbumRequest: PropTypes.func.isRequired,
   setErro: PropTypes.func.isRequired,
   album: PropTypes.shape({
-    data: PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      images: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired,
-      tracks: PropTypes.shape({
-        items: PropTypes.arrayOf(
-          PropTypes.shape({
-            id: PropTypes.string,
-            name: PropTypes.string,
-            preview_url: PropTypes.string,
-          })
-        ).isRequired,
-      }).isRequired,
-    }).isRequired,
     loading: PropTypes.bool.isRequired,
   }),
 };
 
 const mapStateToProps = state => ({
   album: state.album,
+  currentSong: state.player.currentSong,
 });
 
 const mapDispatchToProps = dispatch =>
-  bindActionCreators({...AlbumActions, ...ErroActions}, dispatch);
+  bindActionCreators({...AlbumActions, ...ErroActions, ...PlayerActions}, dispatch);
 
 export const AlbumTest = Album;
 export default connect(

@@ -21,6 +21,10 @@ export const UlAlbums = styled.ul`
     display: flex;
     flex-direction: column;
     transition: all 500ms;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   li img {

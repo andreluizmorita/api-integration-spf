@@ -38,7 +38,7 @@ module.exports = {
       // Vendor CSS loader
       // This is necessary to pack third party libraries like antd
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
     ],

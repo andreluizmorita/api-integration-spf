@@ -21,7 +21,7 @@ export const INITIAL_STATE = {
 
 export default function buscar(state = INITIAL_STATE, action) {
   switch (action.type) {
-    // TODO (André Morita) migrate cache component to redux
+    // TODO (André Morita) migrate check cache the component to redux
     case Types.GET_CACHE:
       const busca = action.payload.buscar;
       const cache = state.cache.filter(

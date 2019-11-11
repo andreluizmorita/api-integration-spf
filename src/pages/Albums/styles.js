@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const AlbumContent = styled.div`
+  padding-bottom: 60px;
+
   .album {
     display: flex;
     flex-direction: column;
@@ -23,7 +25,7 @@ export const AlbumContent = styled.div`
     display: block;
   }
 
-  .album .album-artistas {
+  .album-artistas {
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
@@ -43,7 +45,7 @@ export const AlbumContent = styled.div`
       font-size: 0.9rem;
     }
 
-    .album .album-artistas {
+    .album-artistas {
       padding: 20px 0;
     }
   }
@@ -61,23 +63,29 @@ export const Playlist = styled.div`
     width: 100%;
   }
 
-  ol li {
-    counter-increment: item;
-    position: relative;
-    padding-bottom: 20px;
-    cursor: pointer;
+  @media (max-width: 768px) {
   }
 
-  ol li.active {
-    color: #999;
+  @media (max-width: 576px) {
+    display: block;
+    padding-left: 0;
+    font-size: 0.8rem;
+  }
+`;
+
+export const SongItem = styled.li`
+  counter-increment: item;
+  position: relative;
+  padding-bottom: 20px;
+  cursor: pointer;
+  cursor: ${props => (props.disabled ? "default" : "pointer")};
+  color: ${props => (props.disabled ? "#999" : props.playing ? "#1ED760" : "#FFF")};
+
+  &:hover {
+    opacity: 0.7;
   }
 
-  ol li.disabled {
-    color: #999;
-    cursor: default;
-  }
-
-  ol li:before {
+  &:before {
     margin-right: 10px;
     content: counter(item) " .";
     color: white;
@@ -88,21 +96,14 @@ export const Playlist = styled.div`
     font-size: 1rem;
   }
 
-  ol li span {
+  span {
     position: absolute;
     right: 0;
     color: #999999;
   }
 
-  @media (max-width: 768px) {
-  }
-
   @media (max-width: 576px) {
-    display: block;
-    padding-left: 0;
-    font-size: 0.8rem;
-
-    ol li:before {
+    &:before {
       font-size: 0.8rem;
       width: 30px;
     }

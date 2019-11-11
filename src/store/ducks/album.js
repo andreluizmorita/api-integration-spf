@@ -6,14 +6,13 @@ export const Types = {
 
 export const INITIAL_STATE = {
   data: {
-    name: "",
-    images: {},
-    artists: {},
-    tracks: {
-      items: [],
-    },
+    id: null,
+    artist: null,
+    name: null,
+    cover: null,
+    songs: {},
   },
-  loading: false,
+  loading: true,
 };
 
 export default function album(state = INITIAL_STATE, action) {
@@ -22,13 +21,23 @@ export default function album(state = INITIAL_STATE, action) {
       return {...INITIAL_STATE, loading: true};
     case Types.GET_SUCCESS:
       const {id, name, images, artists, tracks} = action.payload.data;
+      const cover = images[Object.keys(images)[0]].url;
 
       const data = {
         id,
         name,
-        images,
-        artists,
-        tracks,
+        cover,
+        artist: artists[Object.keys(artists)[0]].name,
+        songs: tracks.items.map(item => {
+          return {
+            id: item.id,
+            album: name,
+            title: item.name,
+            preview_url: item.preview_url,
+            duration: item.duration_ms,
+            cover,
+          };
+        }, cover),
       };
 
       return {...state, loading: false, data};
